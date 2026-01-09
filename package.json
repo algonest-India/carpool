@@ -19,6 +19,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "setup:codespaces": "echo 'Setting up Codespaces environment...' && cp .env.example .env && echo 'Please update .env with your Supabase credentials'",
     "db:apply": "node scripts/apply_sql.js database/populate_trip_points.sql",
     "db:populate-points": "node scripts/populate_points.js",
     "lint": "eslint . --ext .js,.mjs --cache",
